@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{0868a581-b2f7-4757-9b65-8fd7f43a8b8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{9f348c63-2d0b-4909-acb7-7640139d3da9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Image">
+      <UniqueIdentifier>{ccb6012f-b518-4bf3-91d1-2503932f2d90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Scene">
+      <UniqueIdentifier>{920edd5c-09d3-4101-877b-f8be2fa8d756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Input">
+      <UniqueIdentifier>{c1a348e9-9cf3-494b-80a4-92b6a83e1ae6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Maingame">
+      <UniqueIdentifier>{bf0909bd-9bcc-4553-83f9-1dfab9b17761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager\Image\Texture">
+      <UniqueIdentifier>{4cec48bb-cacc-4c74-b7d3-d51a3b96b5d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{4437317b-5920-4c54-889f-e4128a892926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Load">
+      <UniqueIdentifier>{d12659d0-b27f-44b2-8349-d2a9957f2ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Custom">
+      <UniqueIdentifier>{327d5702-8e75-4f53-bcd9-330143932124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Button">
+      <UniqueIdentifier>{22070b95-b4a4-4c16-a91e-1d7de2a6a252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Title">
+      <UniqueIdentifier>{3a2b7693-44d3-4a46-859d-ff56093cb368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Puzzle">
+      <UniqueIdentifier>{a2594261-beaa-4e7a-8889-ace45b2e1e78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="singleton.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="cInputManager.h">
+      <Filter>Manager\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="cScene.h">
+      <Filter>Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="cSceneManager.h">
+      <Filter>Manager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="FrameWork.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="cMainGame.h">
+      <Filter>Maingame</Filter>
+    </ClInclude>
+    <ClInclude Include="cImageManager.h">
+      <Filter>Manager\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="cTexture.h">
+      <Filter>Manager\Image\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="cMultiTexture.h">
+      <Filter>Manager\Image\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="cSingleTexture.h">
+      <Filter>Manager\Image\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="cLoadScene.h">
+      <Filter>Scene\Load</Filter>
+    </ClInclude>
+    <ClInclude Include="cCustomGame.h">
+      <Filter>Scene\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="cButton.h">
+      <Filter>Object\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="cTitle.h">
+      <Filter>Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="cPuzzle.h">
+      <Filter>Scene\Puzzle</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="cInputManager.cpp">
+      <Filter>Manager\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="cScene.cpp">
+      <Filter>Manager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="cSceneManager.cpp">
+      <Filter>Manager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWork.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="cMainGame.cpp">
+      <Filter>Maingame</Filter>
+    </ClCompile>
+    <ClCompile Include="cSingleTexture.cpp">
+      <Filter>Manager\Image\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="cTexture.cpp">
+      <Filter>Manager\Image\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="cMultiTexture.cpp">
+      <Filter>Manager\Image\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="cLoadScene.cpp">
+      <Filter>Scene\Load</Filter>
+    </ClCompile>
+    <ClCompile Include="cImageManager.cpp">
+      <Filter>Manager\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="cCustomGame.cpp">
+      <Filter>Scene\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="cButton.cpp">
+      <Filter>Object\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="cTitle.cpp">
+      <Filter>Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="cPuzzle.cpp">
+      <Filter>Scene\Puzzle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FrameWork.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="FrameWork.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
