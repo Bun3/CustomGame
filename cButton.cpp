@@ -2,6 +2,10 @@
 #include "cButton.h"
 
 
+cButton::cButton()
+{
+}
+
 cButton::cButton(int x, int y, const string& key)
 {
 	m_pos.x = x;
@@ -49,7 +53,7 @@ bool cButton::Update()
 
 void cButton::Render()
 {
-	if(b_Click)IMAGE->Render(m_Click, m_pos, true, RGB(255, 255, 255));
+	if (b_Click)IMAGE->Render(m_Click, m_pos, true, RGB(255, 255, 255));
 	else if (b_OnCursor) IMAGE->Render(m_OnCursor, m_pos, true, RGB(255, 255, 255));
 	else			IMAGE->Render(m_Normal, m_pos, true, RGB(255, 255, 255));
 }	

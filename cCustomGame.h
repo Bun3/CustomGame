@@ -7,6 +7,7 @@ typedef enum _Cate
 }CTGY;
 
 class cButton;
+class cPartButton;
 class cCustomGame : public cScene
 {
 private:
@@ -30,8 +31,15 @@ private:
 	cButton *m_CTGY_Cloth;
 	cButton *m_CTGY_Hair;
 
+	cPartButton *m_PartButton[4];
+
+	FILE* m_fp;
+
 	bool b_Credit;
 	int m_CategoryState;
+	int m_key;
+	int m_tmpKey;
+
 public:
 	cCustomGame();
 	virtual ~cCustomGame();
@@ -40,5 +48,7 @@ public:
 	virtual void Update() override;
 	virtual void Render() override;
 	virtual void Release() override;
+
+	void SaveKey(int _key);
 };
 

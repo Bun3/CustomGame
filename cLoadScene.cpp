@@ -1,12 +1,10 @@
 #include "stdafx.h"
 #include "cLoadScene.h"
 
-
 cLoadScene::cLoadScene()
 {
 
 }
-
 
 cLoadScene::~cLoadScene()
 {
@@ -30,6 +28,7 @@ void cLoadScene::Init()
 		Load("KeyDisplay", "./Image/CustomScene/Key_Display.bmp");
 		Load("CategoryBack", "./Image/CustomScene/Category/Category_BackGround.bmp");
 		Load("CreditPopUP", "./Image/CustomScene/Credit_PopUp.bmp");
+		Load("PartBack", "./Image/CustomScene/Part/Part_BackGround.bmp");
 
 		Load("SaveButton_Normal", "./Image/CustomScene/Save_Button.bmp");
 		Load("SaveButton_OnCursor", "./Image/CustomScene/Save_Button.bmp");
@@ -72,6 +71,47 @@ void cLoadScene::Init()
 			Load("Hair_Normal", "./Image/CustomScene/Category/Category_Hair.bmp");
 			Load("Hair_OnCursor", "./Image/CustomScene/Category/Category_Hair.bmp");
 			Load("Hair_Click", "./Image/CustomScene/Category/Category_Hair.bmp");
+		}
+
+		//Part
+		{
+			for (size_t i = 1; i < 5; i++)
+			{
+				Load(string("PartSkin_") + to_string(i) + "_Active",
+					string("./Image/CustomScene/Part/Part_Skin_") + to_string(i) + ".bmp");
+				Load(string("PartSkin_") + to_string(i) + "_Lock",
+					string("./Image/CustomScene/Part/Part_Skin_") + to_string(i) + ".bmp");
+				Load(string("PartSkin_") + to_string(i) + "_Click",
+					string("./Image/CustomScene/Part/Part_Skin_") + to_string(i) + ".bmp");
+
+				Load(string("PartEye_") + to_string(i) + "_Active",
+					string("./Image/CustomScene/Part/Part_Eye_") + to_string(i) + ".bmp");
+				Load(string("PartEye_") + to_string(i) + "_Lock",
+					string("./Image/CustomScene/Part/Part_Eye_") + to_string(i) + ".bmp");
+				Load(string("PartEye_") + to_string(i) + "_Click",
+					string("./Image/CustomScene/Part/Part_Eye_") + to_string(i) + ".bmp");
+				
+				Load(string("PartMouth_") + to_string(i) + "_Active",
+					string("./Image/CustomScene/Part/Part_Mouth_") + to_string(i) + ".bmp");
+				Load(string("PartMouth_") + to_string(i) + "_Lock",
+					string("./Image/CustomScene/Part/Part_Mouth_") + to_string(i) + ".bmp");
+				Load(string("PartMouth_") + to_string(i) + "_Click",
+					string("./Image/CustomScene/Part/Part_Mouth_") + to_string(i) + ".bmp");
+
+				Load(string("PartCloth_") + to_string(i) + "_Active",
+					string("./Image/CustomScene/Part/Part_Cloth_") + to_string(i) + ".bmp");
+				Load(string("PartCloth_") + to_string(i) + "_Lock",
+					string("./Image/CustomScene/Part/Part_Cloth_") + to_string(i) + ".bmp");
+				Load(string("PartCloth_") + to_string(i) + "_Click",
+					string("./Image/CustomScene/Part/Part_Cloth_") + to_string(i) + ".bmp");
+
+				Load(string("PartHair_") + to_string(i) + "_Active",
+					string("./Image/CustomScene/Part/Part_Hair_") + to_string(i) + ".bmp");
+				Load(string("PartHair_") + to_string(i) + "_Lock",
+					string("./Image/CustomScene/Part/Part_Hair_") + to_string(i) + ".bmp");
+				Load(string("PartHair_") + to_string(i) + "_Click",
+					string("./Image/CustomScene/Part/Part_Hair_") + to_string(i) + ".bmp");
+			}
 		}
 	}
 

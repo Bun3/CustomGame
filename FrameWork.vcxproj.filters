@@ -29,9 +29,6 @@
     <Filter Include="Scene">
       <UniqueIdentifier>{4437317b-5920-4c54-889f-e4128a892926}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Scene\Load">
-      <UniqueIdentifier>{d12659d0-b27f-44b2-8349-d2a9957f2ba6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Scene\Custom">
       <UniqueIdentifier>{327d5702-8e75-4f53-bcd9-330143932124}</UniqueIdentifier>
     </Filter>
@@ -43,6 +40,12 @@
     </Filter>
     <Filter Include="Scene\Puzzle">
       <UniqueIdentifier>{a2594261-beaa-4e7a-8889-ace45b2e1e78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Load">
+      <UniqueIdentifier>{d12659d0-b27f-44b2-8349-d2a9957f2ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\PartButton">
+      <UniqueIdentifier>{f7f1715a-f204-4390-93ab-6285c8a17895}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -94,6 +97,9 @@
     <ClInclude Include="cPuzzle.h">
       <Filter>Scene\Puzzle</Filter>
     </ClInclude>
+    <ClInclude Include="cPartButton.h">
+      <Filter>Object\PartButton</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cInputManager.cpp">
@@ -136,6 +142,9 @@
     </ClCompile>
     <ClCompile Include="cPuzzle.cpp">
       <Filter>Scene\Puzzle</Filter>
+    </ClCompile>
+    <ClCompile Include="cPartButton.cpp">
+      <Filter>Object\PartButton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

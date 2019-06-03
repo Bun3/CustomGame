@@ -1,0 +1,3 @@
+﻿  cImageManager.cpp
+d:\포트폴리오\2학년\win32 api\customgame\cimagemanager.cpp(90): warning C4101: 'hdc' :참조되지 않은 지역 변수입니다.
+  FrameWork.vcxproj -> D:\포트폴리오\2학년\Win32 API\CustomGame\x64\Debug\FrameWork.exe
