@@ -26,6 +26,7 @@ void cLoadScene::Init()
 	//CustomSceneImage
 	{
 		Load("KeyDisplay", "./Image/CustomScene/Key_Display.bmp");
+		Load("KeyBack", "./Image/CustomScene/KeyValBack.bmp");
 		Load("CategoryBack", "./Image/CustomScene/Category/Category_BackGround.bmp");
 		Load("CreditPopUP", "./Image/CustomScene/Credit_PopUp.bmp");
 		Load("PartBack", "./Image/CustomScene/Part/Part_BackGround.bmp");

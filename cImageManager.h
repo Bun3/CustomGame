@@ -30,7 +30,7 @@ public:
 
 	//void PrintText(const string& str, Vec2 pos, float size, D3DCOLOR color, bool center = false);
 	void Render(cTexture * texture, Point pos, bool center = false, UINT rgb = NULL);
-	void TextRender(cTexture * texture, wchar_t* str, int x, int y, COLORREF textRGB = RGB(255, 0, 255), int fontSize = 30);
+	void TextRender(const string& str, int x, int y, COLORREF textRGB = RGB(255, 0, 255), int fontSize = 30);
 
 	void InputHDC(HDC hdc) {
 		m_hdc = hdc;

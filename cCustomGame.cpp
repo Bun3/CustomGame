@@ -20,6 +20,9 @@ void cCustomGame::Init()
 	m_KeyPos.x = 0; 
 	m_KeyPos.y = 0;
 
+	m_KeyValPos.x = 0;
+	m_KeyValPos.y = 0;
+
 	m_CategoryBack_Pos.x = 320;
 	m_CategoryBack_Pos.y = 650;
 	m_PartBack_Pos.x = 320;
@@ -102,12 +105,14 @@ void cCustomGame::Update()
 
 void cCustomGame::Render()
 {
-	wchar_t str[1024] = L"";
-	wsprintf(str, L"%d", m_key);
+	char str[128] = "";
+	sprintf(str, "%d", m_key);
 
 	IMAGE->Render(IMAGE->FindImage("Custom_BG"), m_BGPos, false);
+
 	IMAGE->Render(IMAGE->FindImage("KeyDisplay"), m_KeyPos, false, RGB(255, 255, 255));
-	IMAGE->TextRender(IMAGE->FindImage("KeyDisplay"), str, 100, 15, RGB(0, 0, 0), 25);
+	IMAGE->TextRender(str, 80, 15, RGB(0, 0, 0), 30);
+	
 	IMAGE->Render(IMAGE->FindImage("CategoryBack"), m_CategoryBack_Pos, true);
 	IMAGE->Render(IMAGE->FindImage("PartBack"), m_PartBack_Pos, true);
 	m_SaveButton->Render();

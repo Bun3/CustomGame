@@ -71,44 +71,30 @@ void cImageManager::Render(cTexture * texture, Point pos, bool center, UINT rgb)
 			texture->m_info->bmWidth, texture->m_info->bmHeight, rgb);
 	}
 
-	//if (x != 0 && y != 0 && str != 0)
-	//{
-	//	SetTextAlign(m_MemDC, TA_CENTER);
-	//	SetTextColor(m_MemDC, RGB(255, 0, 255));
-	//	SetBkMode(m_MemDC, TRANSPARENT);
-	//	TextOut(m_MemDC, x, y, str, lstrlenW(str));
-	//	BitBlt(m_hdc, x, y, 0, 0, m_MemDC, 0, 0, SRCCOPY);
-	//}
-
 	SelectObject(m_MemDC, OldBitMap);
 	DeleteDC(m_MemDC);
 	DeleteObject(OldBitMap);
 }
 
-void cImageManager::TextRender(cTexture * texture, wchar_t* str, int x, int y, COLORREF rgb, int fontSize)
+void cImageManager::TextRender(const string& str, int x, int y, COLORREF rgb, int fontSize)
 {
-	HDC hdc;
-	HDC m_MemDC;
-	HBITMAP tmpBitMap;
 	HFONT font, oldfont;
-	//AddFontResource(L"./Font/BMJUA_ttf.ttf");
 
-	m_MemDC = CreateCompatibleDC(m_hdc);
-	tmpBitMap = (HBITMAP)SelectObject(m_MemDC, texture->m_image);
+	wstring m_str;
+	m_str = wstring(str.begin(), str.end());
 
-	font = CreateFont(fontSize, 0, 0, 0, 0, 0, 0, 0, HANGEUL_CHARSET, 0, 0, 0, 0, L"배달의민족 주아");
-	oldfont = (HFONT)SelectObject(m_MemDC, font);
+	RECT m_rc = { x ,y , x + 100, y + 100 };
 
-	SetTextAlign(m_MemDC, TA_CENTER);
-	SetTextColor(m_MemDC, rgb);
-	SetBkMode(m_MemDC, TRANSPARENT);
-	TextOut(m_MemDC, x, y, str, lstrlenW(str));
+	font = CreateFont(fontSize, 0, 0, 0, 0, 0, 0, 0, 
+		HANGEUL_CHARSET, 0, 0, 0, 0, L"배달의민족 주아");
+	oldfont = (HFONT)SelectObject(m_hdc, font);
 
-	SelectObject(m_MemDC, oldfont);
+	SetBkMode(m_hdc, TRANSPARENT);
+	SetTextColor(m_hdc, rgb);
+	DrawText(m_hdc, m_str.c_str(), -1, &m_rc, DT_VCENTER);
+
+	SelectObject(m_hdc, oldfont);
 	DeleteObject(font);
-	SelectObject(m_MemDC, tmpBitMap);
-	//DeleteObject(tmpBitMap);
-	//DeleteDC(m_MemDC);
 }
 
 bool cFrame::Frame()

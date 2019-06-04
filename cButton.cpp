@@ -25,7 +25,6 @@ cButton::cButton(int x, int y, const string& key)
 	b_OnCursor = false;
 }
 
-
 cButton::~cButton()
 {
 

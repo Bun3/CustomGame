@@ -18,6 +18,7 @@ private:
 	Point m_CategoryPos[5];
 	Point m_PartPos[4];
 	Point m_CreditPopUpPos;
+	Point m_KeyValPos;
 
 	cButton *m_SaveButton;
 	cButton *m_CreditButton;
