@@ -1,4 +1,59 @@
-﻿  cCustomGame.cpp
-d:\포트폴리오\2학년\win32 api\customgame\ccustomgame.cpp(109): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdio.h(1772): note: 'sprintf' 선언을 참조하십시오.
+﻿  stdafx.cpp
+  CSound.cpp
+  CSoundManager.cpp
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanager.cpp(28): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanager.cpp(28): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanager.cpp(53): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanager.cpp(53): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanager.cpp(54): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanager.cpp(54): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanager.cpp(63): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanager.cpp(63): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+  FrameWork.cpp
+  cButton.cpp
+  cCustomGame.cpp
+d:\포트폴리오\2학년\win32 api\customgame\ccustomgame.cpp(293): warning C4477: 'fscanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'bool *'입니다.
+  cImageManager.cpp
+  cInputManager.cpp
+  cLoadScene.cpp
+d:\포트폴리오\2학년\win32 api\customgame\cloadscene.cpp(207): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  cMainGame.cpp
+  cMultiTexture.cpp
+  cOX.cpp
+  cPartButton.cpp
+  cPuzzle.cpp
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(98): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(167): warning C4474: 'sprintf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(167): note: 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(144): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(147): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(150): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(159): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(163): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(167): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(171): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+d:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(174): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+  cScene.cpp
+  cSceneManager.cpp
+  cSingleTexture.cpp
+  cSoundManger.cpp
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanger.cpp(11): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanger.cpp(11): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanger.cpp(23): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanger.cpp(23): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanger.cpp(33): warning C4311: '형식 캐스트': 'HWND'에서 'DWORD'(으)로 포인터가 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanger.cpp(33): warning C4302: '형식 캐스트': 'HWND'에서 'DWORD'(으)로 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanger.cpp(46): warning C4311: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 포인터가 잘립니다.
+d:\포트폴리오\2학년\win32 api\customgame\csoundmanger.cpp(46): warning C4302: '형식 캐스트': 'LPVOID'에서 'DWORD'(으)로 잘립니다.
+  cTexture.cpp
+  cTitle.cpp
+  코드를 생성하고 있습니다...
   FrameWork.vcxproj -> D:\포트폴리오\2학년\Win32 API\CustomGame\x64\Debug\FrameWork.exe

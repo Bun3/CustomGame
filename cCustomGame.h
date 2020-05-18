@@ -6,6 +6,11 @@ typedef enum _Cate
 	Skin, Eye, Mouth, Cloth, Hair
 }CTGY;
 
+typedef enum _Image
+{
+	FIRST = 1, SECOND, THIRD, FOURTH
+}IMAGENUM;
+
 class cButton;
 class cPartButton;
 class cCustomGame : public cScene
@@ -19,6 +24,8 @@ private:
 	Point m_PartPos[4];
 	Point m_CreditPopUpPos;
 	Point m_KeyValPos;
+	Point m_ImagePos;
+	Point m_CTGY_EnablePos;
 
 	cButton *m_SaveButton;
 	cButton *m_CreditButton;
@@ -32,14 +39,19 @@ private:
 	cButton *m_CTGY_Cloth;
 	cButton *m_CTGY_Hair;
 
-	cPartButton *m_PartButton[4];
+	cPartButton *m_PartButton[5][4];
 
 	FILE* m_fp;
 
+	bool b_PartVisible[5]; //Skin ~ Hair 
 	bool b_Credit;
+	bool b_LoadOnce = true;
+	bool b_InitOnce = true;
 	int m_CategoryState;
-	int m_key;
-	int m_tmpKey;
+	int m_ImageNum[5];
+
+public:
+	static int nPlayerKey;
 
 public:
 	cCustomGame();
@@ -50,6 +62,22 @@ public:
 	virtual void Render() override;
 	virtual void Release() override;
 
-	void SaveKey(int _key);
+	void SaveKey();
+	void LoadKey();
+
+	void SaveCloth();
+	void LoadCloth();
+
+	void SaveUnLock();
+	void LoadUnLock();
+
+	void SaveEquip();
+	void LoadEquip();
+	void Capture(HDC _HDC, int w, int h);
+	BITMAPINFO CreateDIB(int w, int h);
+	BITMAPFILEHEADER CreateDIBHeader(BITMAPINFO dib);
+
+	inline void SetPlayerKey(int i) { nPlayerKey = i; };
+	inline int GetPlayerKey() { return nPlayerKey; };
 };
 

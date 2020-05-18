@@ -1,0 +1,10 @@
+﻿  cCustomGame.cpp
+d:\포트폴리오\2학년\win32 api\customgame\ccustomgame.cpp(197): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+d:\포트폴리오\2학년\win32 api\customgame\ccustomgame.cpp(277): warning C4477: 'fscanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'bool *'입니다.
+  코드를 생성하고 있습니다.
+  1 of 673 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  FrameWork.vcxproj -> D:\포트폴리오\2학년\Win32 API\CustomGame\x64\Release\FrameWork.exe

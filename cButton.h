@@ -17,6 +17,6 @@ public:
 	virtual ~cButton();
 
 	bool Update();
-	void Render();
+	void Render(COLORREF rgb = RGB(255, 0, 242));
 };
 

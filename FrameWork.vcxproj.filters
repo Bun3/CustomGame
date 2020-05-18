@@ -47,6 +47,9 @@
     <Filter Include="Object\PartButton">
       <UniqueIdentifier>{f7f1715a-f204-4390-93ab-6285c8a17895}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Manager\Sound">
+      <UniqueIdentifier>{1d2e7d5b-481a-41f2-a1a4-029c89ccbff3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="singleton.h">
@@ -100,6 +103,15 @@
     <ClInclude Include="cPartButton.h">
       <Filter>Object\PartButton</Filter>
     </ClInclude>
+    <ClInclude Include="cOX.h">
+      <Filter>Scene\Puzzle</Filter>
+    </ClInclude>
+    <ClInclude Include="cSoundManger.h">
+      <Filter>Manager\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="CSound.h">
+      <Filter>Manager\Sound</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cInputManager.cpp">
@@ -145,6 +157,15 @@
     </ClCompile>
     <ClCompile Include="cPartButton.cpp">
       <Filter>Object\PartButton</Filter>
+    </ClCompile>
+    <ClCompile Include="cOX.cpp">
+      <Filter>Scene\Puzzle</Filter>
+    </ClCompile>
+    <ClCompile Include="cSoundManger.cpp">
+      <Filter>Manager\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="CSound.cpp">
+      <Filter>Manager\Sound</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

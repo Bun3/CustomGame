@@ -1,2 +1,21 @@
-﻿  cCustomGame.cpp
-  FrameWork.vcxproj -> D:\포트폴리오\2학년\Win32 API\APiFrameWork\Debug\FrameWork.exe
+﻿  cPuzzle.cpp
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(98,20): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(167,33): warning C4474: 'sprintf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(167,33): message : 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(144,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 'sprintf' 선언을 참조하십시오.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(147,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 'sprintf' 선언을 참조하십시오.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(150,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 'sprintf' 선언을 참조하십시오.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(159,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 'sprintf' 선언을 참조하십시오.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(163,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 'sprintf' 선언을 참조하십시오.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(167,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 'sprintf' 선언을 참조하십시오.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(171,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 'sprintf' 선언을 참조하십시오.
+D:\Work\Grade2\Win32 API\CustomGame\cPuzzle.cpp(174,1): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(1774): message : 'sprintf' 선언을 참조하십시오.
+  FrameWork.vcxproj -> D:\Work\Grade2\Win32 API\CustomGame\Debug\FrameWork.exe

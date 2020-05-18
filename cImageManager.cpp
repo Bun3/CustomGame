@@ -83,7 +83,7 @@ void cImageManager::TextRender(const string& str, int x, int y, COLORREF rgb, in
 	wstring m_str;
 	m_str = wstring(str.begin(), str.end());
 
-	RECT m_rc = { x ,y , x + 100, y + 100 };
+	RECT m_rc = { x ,y , x + 200, y + 100 };
 
 	font = CreateFont(fontSize, 0, 0, 0, 0, 0, 0, 0, 
 		HANGEUL_CHARSET, 0, 0, 0, 0, L"배달의민족 주아");
@@ -96,7 +96,7 @@ void cImageManager::TextRender(const string& str, int x, int y, COLORREF rgb, in
 	SelectObject(m_hdc, oldfont);
 	DeleteObject(font);
 }
-
+	
 bool cFrame::Frame()
 {
 	if (FrameSkip <= timeGetTime()) {

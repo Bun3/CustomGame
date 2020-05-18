@@ -1,6 +1,7 @@
 #pragma once
 class cScene abstract
 {
+
 public:
 	cScene();
 	virtual ~cScene();

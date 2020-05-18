@@ -11,6 +11,9 @@ private:
 	Point m_LogoPos;
 	Point m_IllustPos;
 
+	RECT rect;
+	POINT ptMouse;
+
 	cButton* m_StartGuideButton;
 
 public:

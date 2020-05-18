@@ -1,0 +1,46 @@
+﻿  stdafx.cpp
+  CSound.cpp
+  CSoundManager.cpp
+  FrameWork.cpp
+  cButton.cpp
+  cCustomGame.cpp
+e:\포트폴리오\2학년\win32 api\customgame\ccustomgame.cpp(293): warning C4477: 'fscanf_s' : 서식 문자열 '%d'에 'int *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'bool *'입니다.
+  cImageManager.cpp
+  cInputManager.cpp
+  cLoadScene.cpp
+  cMainGame.cpp
+  cMultiTexture.cpp
+  cOX.cpp
+  cPartButton.cpp
+  cPuzzle.cpp
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(110): warning C4305: '-=': 'double'에서 'float'(으)로 잘립니다.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(179): warning C4474: 'sprintf' : 서식 문자열에 전달된 인수가 너무 많습니다.
+  e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(179): note: 자리 표시자 및 해당 매개 변수에는 variadic 인수가 0개 필요하지만 1개가 제공되었습니다.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(156): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(159): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(162): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(171): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(175): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(179): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(183): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+e:\포트폴리오\2학년\win32 api\customgame\cpuzzle.cpp(186): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
+  cScene.cpp
+  cSceneManager.cpp
+  cSingleTexture.cpp
+  cSoundManger.cpp
+  cTexture.cpp
+  cTitle.cpp
+  코드를 생성하고 있습니다.
+  0 of 827 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  FrameWork.vcxproj -> E:\포트폴리오\2학년\Win32 API\CustomGame\Release\FrameWork.exe

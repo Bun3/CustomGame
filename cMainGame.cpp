@@ -30,13 +30,15 @@ void cMainGame::Init(HWND hWnd)
 	SCENE->AddScene("Custom_BG", new cCustomGame);
 	SCENE->AddScene("Title_BG", new cTitle);
 	SCENE->AddScene("Puzzle_BG", new cPuzzle);
-	
 	//처음으로 보여줄 씬으로 바꾼다
 	SCENE->ChangeScene("Load");
+	//SOUND.Play("S", true);
+
 }
 
 void cMainGame::Update()
 {
+	SOUND2->PlayBGM();
 	SCENE->Update();
 	INPUT->Update();
 	Count++;
@@ -44,7 +46,6 @@ void cMainGame::Update()
 
 void cMainGame::Render()
 {
-	HDC hdc = GetDC(m_hWnd);
 	HDC m_MemDC;
 	HBITMAP hBitmap;
 	HBITMAP OldBitMap;
@@ -52,15 +53,14 @@ void cMainGame::Render()
 	RECT WindowRect;
 	GetClientRect(m_hWnd, &WindowRect);
 
-	m_MemDC = CreateCompatibleDC(hdc);
-	hBitmap = CreateCompatibleBitmap(hdc, WindowRect.right, WindowRect.bottom);
+	m_MemDC = CreateCompatibleDC(m_hDC);
+	hBitmap = CreateCompatibleBitmap(m_hDC, WindowRect.right, WindowRect.bottom);
 	OldBitMap = (HBITMAP)SelectObject(m_MemDC, hBitmap);
-
 
 	IMAGE->InputHDC(m_MemDC);
 	SCENE->Render();
 
-	BitBlt(hdc, 0, 0, WindowRect.right, WindowRect.bottom, m_MemDC, 0, 0, SRCCOPY);
+	BitBlt(m_hDC, 0, 0, WindowRect.right, WindowRect.bottom, m_MemDC, 0, 0, SRCCOPY);
 	DeleteObject(SelectObject(m_MemDC, OldBitMap));
 	DeleteDC(m_MemDC);
 
@@ -70,6 +70,7 @@ void cMainGame::Release()
 {
 	KillTimer(m_hWnd, 0);
 
+	cSoundManger::ResetInstance();
 	cImageManager::ResetInstance();
 	cInputManager::ResetInstance();
 	cSceneManager::ResetInstance();
